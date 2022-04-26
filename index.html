@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<title>Shipper Ticker</title>
-		<meta charset="UTF-8">
-		<script src="script/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="style/main.css">
-	</head>
-	<body>
 
-	</body>
+<head>
+    <title>Shipper Ticker</title>
+    <meta charset="UTF-8">
+    <script src="script/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body>
+    <div id="displayFrame">
+        <div id="tickerBox"></div>
+        <div id="formFrame">
+            <form id="inputForm">
+                <input type="text" id="customer" placeholder="Customer">
+                <input type="text" id="trip" placeholder="Trip ID">
+                <input type="text" id="location" placeholder="Location">
+                <input type="text" id="zip" placeholder="Zip Code">
+                <input type="text" id="pallets" placeholder="Number of Pallets">
+                <input type="text" id="weight" placeholder="Total Weight">
+                <input type="checkbox" id="racked" value="racked">
+                <label for="racked">Racked</label>
+                <input type="text" id="carrier" placeholder="Carrier">
+                <input type="text" id="date" placeholder="mm/dd/yy">
+                <input type="checkbox" id="scheduled" value="scheduled">
+                <label for="scheduled">Scheduled</label>
+                <input type="checkbox" id="bol" value="bol">
+                <label for="bol">BOL</label>
+                <input type="checkbox" id="shipped" value="shipped">
+                <label for="shipped">Shipped</label>
+                <input type="checkbox" id="closed" value="closed">
+                <label for="closed">Closed</label><br>
+                <input type="button" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>

@@ -1,0 +1,22 @@
+.cellOrange {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: orange;
+}
+
+.cellOrange p {
+    border: 1px solid black;
+}
+
+.cellGrey {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: grey;
+}
+
+#inputForm {
+    max-width: 100%;
+    display: flex;
+}
