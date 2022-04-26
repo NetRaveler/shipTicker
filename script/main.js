@@ -47,27 +47,13 @@ function addToArray() {
     myShipments.push(newShip);
 
 }
-// I need the object to contain a function that reports the trip ID, or all information
+
 function deleteFromArray(given) {
     let index = myShipments.findIndex(x => x.trip == given);
     console.log(index);
     myShipments.splice(index, 1);
     displayContents();
 }
-/*
-function findElement(tripID) {
-    // Get the trip ID of the shipment and use that to find the element in the array.
-    // Working on this function to find an element of an object in an array by a value
-    let coordinates = indexOf(Shipment.trip) === tripID;
-    return coordinates;
-}
-
-function removeFromArray(x) {
-    
-    findElement(x);
-    myShipments.splice(coordinates, 1);
-}
-*/
 
 function displayContents() {
     tickerBox.textContent = "";
@@ -127,6 +113,10 @@ function displayContents() {
 
 
     }
+}
+
+function clearForm() {
+
 }
 // Testing Function
 function test() {
